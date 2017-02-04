@@ -1,0 +1,154 @@
+a:hover{
+	color: #005761;
+}
+
+
+/*button */
+
+.btn-main{
+	border: 1px solid #005761;
+}
+.btn-main:hover{
+	background: #005761;
+	-webkit-box-shadow: 0px 0px 0px 3px #005761;
+	box-shadow: 0px 0px 0px 3px #005761;
+}
+
+/*nav bar*/
+.on.navbar-default .navbar-brand{
+	background: #005761;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	background-color: #005761;
+}
+.slider-content a:hover {
+	background: #005761;
+	border: 1px solid#005761;
+	color: #fff;
+}
+
+.carousel-control.left i:hover,
+.carousel-control.right i:hover{
+	background: #005761;
+	border-color: #005761;
+}
+
+
+/*profile section
+=====================================*/
+
+.pro-desc h5{
+	color: #005761;
+}
+
+.socail-list a:hover i{
+	color: #fff;
+	border: 1px solid #005761;
+	background: #005761;
+}
+
+
+.resume-single{
+	border-bottom: 1px solid#005761;
+	border-right: 1px solid#005761;
+}
+.year{
+	background:#005761
+}
+.versity{
+	color: #005761;
+}
+
+.grade:hover{
+	color: #005761;
+	border: 1px solid#005761;
+}
+label.danger{
+	background: #005761;
+}
+
+/*panel
+=====================*/
+.panel-default.panel-exp{
+	border: 1px solid#005761;
+}
+
+h4.panel-title a:after {
+    background: none repeat scroll 0% 0% #005761;
+}
+
+
+/*SERVICE 
+============================================*/
+.icon-box .icon{
+	color: #005761;
+}
+
+
+/*	PORTFOLIO ISOTOPE
+====================================*/
+.barrier-carousel-controller .left:hover,
+.barrier-carousel-controller .right:hover,
+.owl-controls .owl-prev:hover, 
+.owl-controls .owl-next:hover{
+	background:#005761;
+}
+
+
+
+/*FEATURE section
+=========================================*/
+.feature-desc h4{
+	color: #005761;
+}
+.feature-icon i{
+	color: #005761;
+}
+.feature-icon i:hover{
+	background: #005761;
+	-webkit-box-shadow: 0px 0px 0px 3px #005761;
+	box-shadow: 0px 0px 0px 3px #005761;
+}
+.panel-pricing .panel-body.featured{
+	background: #005761;
+}
+
+
+/*BLOG SECTion
+==============================*/
+.blog-desc .blog-title{
+	color: #005761;
+}
+.blog-meta span i.fa-comments{
+	color: #005761;
+}
+
+
+/*CONTACT section
+====================================*/
+.form-control:hover, .form-control:focus{
+	border-color: #005761;
+}
+
+
+/*TEAM section
+==============================*/
+.member-overlay{
+	background: #005761;
+}
+#client .header-desc .line{
+	background: #005761;
+}
+
+/*Skill section
+============================*/
+.color-overlay{
+	background: #005761;
+}
+.process-icon i,.process-none i{
+	border: 2px solid #005761;
+}
+
+
+

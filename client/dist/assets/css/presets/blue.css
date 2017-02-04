@@ -1,0 +1,153 @@
+a:hover{
+	color: #21C2F8;
+}
+
+
+/*button */
+
+.btn-main{
+	border: 1px solid #21C2F8;
+}
+.btn-main:hover{
+	background: #21C2F8;
+	-webkit-box-shadow: 0px 0px 0px 3px #21C2F8;
+	box-shadow: 0px 0px 0px 3px #21C2F8;
+}
+
+/*nav bar*/
+.on.navbar-default .navbar-brand{
+	background: #21C2F8;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	background-color: #21C2F8;
+}
+.slider-content a:hover {
+	background: #21C2F8;
+	border: 1px solid#21C2F8;
+	color: #fff;
+}
+
+.carousel-control.left i:hover,
+.carousel-control.right i:hover{
+	background: #21C2F8;
+	border-color: #21C2F8;
+}
+
+
+/*profile section
+=====================================*/
+
+.pro-desc h5{
+	color: #21C2F8;
+}
+
+.socail-list a:hover i{
+	color: #fff;
+	border: 1px solid #21C2F8;
+	background: #21C2F8;
+}
+
+
+.resume-single{
+	border-bottom: 1px solid#21C2F8;
+	border-right: 1px solid#21C2F8;
+}
+.year{
+	background:#21C2F8
+}
+.versity{
+	color: #21C2F8;
+}
+
+.grade:hover{
+	color: #21C2F8;
+	border: 1px solid#21C2F8;
+}
+label.danger{
+	background: #21C2F8;
+}
+
+/*panel
+=====================*/
+.panel-default.panel-exp{
+	border: 1px solid#21C2F8;
+}
+
+h4.panel-title a:after {
+    background: none repeat scroll 0% 0% #21C2F8;
+}
+
+
+/*SERVICE 
+============================================*/
+.icon-box .icon{
+	color: #21C2F8;
+}
+
+
+/*	PORTFOLIO ISOTOPE
+====================================*/
+.barrier-carousel-controller .left:hover,
+.barrier-carousel-controller .right:hover,
+.owl-controls .owl-prev:hover, 
+.owl-controls .owl-next:hover{
+	background:#21C2F8;
+}
+
+
+
+/*FEATURE section
+=========================================*/
+.feature-desc h4{
+	color: #21C2F8;
+}
+.feature-icon i{
+	color: #21C2F8;
+}
+.feature-icon i:hover{
+	background: #21C2F8;
+	-webkit-box-shadow: 0px 0px 0px 3px #21C2F8;
+	box-shadow: 0px 0px 0px 3px #21C2F8;
+}
+.panel-pricing .panel-body.featured{
+	background: #21C2F8;
+}
+
+
+/*BLOG SECTion
+==============================*/
+.blog-desc .blog-title{
+	color: #21C2F8;
+}
+.blog-meta span i.fa-comments{
+	color: #21C2F8;
+}
+
+
+/*CONTACT section
+====================================*/
+.form-control:hover, .form-control:focus{
+	border-color: #21C2F8;
+}
+
+
+/*TEAM section
+==============================*/
+.member-overlay{
+	background: #21C2F8;
+}
+#client .header-desc .line{
+	background: #21C2F8;
+}
+
+/*Skill section
+============================*/
+.color-overlay{
+	background: #21C2F8;
+}
+.process-icon i,.process-none i{
+	border: 2px solid #21C2F8;
+}
+
+

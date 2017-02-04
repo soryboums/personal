@@ -69,15 +69,11 @@ module.exports = {
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/angular-animate/angular-animate.js',
       'node_modules/angular-resource/angular-resource.js',
-      'node_modules/angular-material/angular-material.js',
       'node_modules/angular-aria/angular-aria.js',
-      'node_modules/angular-bootstrap/ui-bootstrap-tpls.min.js',
       'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/angular-ui-router/release/angular-ui-router.js',
-      'node_modules/ngstorage/ngStorage.min.js'
     ],
     css: [
-      'node_modules/angular-material/angular-material.css'
     ],
     assets: [
     ],

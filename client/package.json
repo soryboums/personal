@@ -43,6 +43,7 @@
     "grunt-html2js": "^0.3.8",
     "grunt-karma": "^2.0.0",
     "grunt-ng-annotate": "^3.0.0",
+    "jasmine-core": "^2.5.2",
     "karma": "^1.4.1",
     "karma-chrome-launcher": "^2.0.0",
     "karma-coffee-preprocessor": "^1.0.1",
