@@ -36,9 +36,52 @@ angular.module( 'personal.home', [
   });
 })
 
+// A factory to download the resume from the server,
+// Do not use a direct xhr request, it does not support downloading
+// Use $window instead
+.factory('Resume', ['$q', '$timeout', '$window', function Resume($q, $timeout, $window){
+  return {
+    download: function(){
+      var defer = $q.defer();
+      $timeout(function(){
+        $window.location = 'api/resume';
+      }, 1000)
+      .then(function(){
+        defer.resolve('Resume downloaded successfully');
+      }, function(error){
+        defer.reject(error);
+      });
+      return defer.$promise;
+    }
+  };
+}])
+
+// A factory to send message
+.factory('Message', ['$resource', function Message($resource){
+  return $resource('api/message', {}, {});
+}])
+
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', [function HomeController( ) {
+.controller( 'HomeCtrl', ['Resume', 'Message', '$log', function HomeController(Resume, Message, $log) {
   var self = this;
+  self.msgObj = {};
+  self.resume = resume;
+  self.sendMsg = sendMsg;
+
+  function resume(event){
+    event.preventDefault();
+    Resume.download().then(function(success){
+      $log.info(success);
+    }, function(error){
+      $log.error(error);
+    });
+  }
+
+  function sendMsg(event){
+    event.preventDefault();
+    Message.save(self.msgObj);
+  }
+
 }]);

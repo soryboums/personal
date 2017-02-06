@@ -3,7 +3,8 @@ angular.module( 'personal', [
   'templates-common',
   'personal.home',
   'personal.navbar',
-  'ui.router'
+  'ui.router',
+  'ngResource'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
