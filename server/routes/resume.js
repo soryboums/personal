@@ -6,7 +6,7 @@ var resumeRouter = express.Router();
 resumeRouter.route('/')
 
 .get(function(req, res, next){
-  var resume = path.join(__dirname, '../public/ResumeDiallo.pdf');
+  var resume = path.join(__dirname, '../public/resumeDiallo.pdf');
   res.download(resume);
 });
 
