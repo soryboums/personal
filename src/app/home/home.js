@@ -64,7 +64,7 @@ angular.module( 'personal.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', ['Resume', 'Message', '$log', function HomeController(Resume, Message, $log) {
+.controller( 'HomeCtrl', ['Resume', 'Message', function HomeController(Resume, Message) {
   var self = this;
   self.msgObj = {};
   self.resume = resume;
@@ -72,11 +72,7 @@ angular.module( 'personal.home', [
 
   function resume(event){
     event.preventDefault();
-    Resume.download().then(function(success){
-      $log.info(success);
-    }, function(error){
-      $log.error(error);
-    });
+    Resume.download();
   }
 
   function sendMsg(event){
