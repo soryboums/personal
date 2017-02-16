@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="personal" scroll ng-controller="AppCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <title>Ibrahima Sory DIALLO - Software Development Engineer</title> -->
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title ng-bind="pageTitle"></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="assets/boot/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Prettyphoto -->
+    <link rel="stylesheet" href="assets/css/prettyPhoto.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!--Line icon font -->
+    <link rel="stylesheet" href="assets/css/line-icons.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Prettyphoto -->
+    <link rel="stylesheet" href="assets/css/prettyPhoto.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- color style -->
+    <link rel="stylesheet" href="assets/css/presets/maincolor.css">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- circle counter -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- font awesome from BootstrapCDN -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+
+    <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script><% }); %>
+
+    <!-- initialize jQuery Library -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <!-- Wow Animation -->
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <!-- SmoothScroll -->
+    <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+    <!-- prettyphoto -->
+    <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
+    <!-- Eeasing -->
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <!-- Counter -->
+    <script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Waypoints -->
+    <script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- Google Map API Key Source -->
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <!-- Google Map  Source -->
+    <script type="text/javascript" src="assets/js/gmaps.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+  </head>
+  <body>
+
+
+    <div ui-view="navbar"></div>
+    <div ui-view="main"></div>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-desc text-center">
+              <div class="logo wow fadeInDown">Ibrahima Sory DIALLO</div>
+              <ul class="socail-list list-inline">
+                <li><a href="https://bitbucket.org/isdiallo"><i class="fa fa-bitbucket wow fadeInLeft" data-wow-delay=".3s"></i></a></li>
+                <li><a href="https://github.com/soryboums"><i class="fa fa-github wow fadeInLeft" data-wow-delay=".6s"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/isdiallo"><i class="fa fa-linkedin wow fadeInLeft" data-wow-delay=".9s"></i></a></li>
+                <li><a href="https://medium.com/@isdiallo"><i class="fa fa-medium wow fadeInLeft" data-wow-delay="1.2s"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- row end -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="copyright-info m20">
+             &copy; Copyright 2017     |     Ibrahima Sory DIALLO
+            </div>
+          </div>
+        </div><!--/ Row end -->
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="15" class="back-to-top affix">
+          <a href="#slider" class="page-scroll" scroll-on-click ref="slider">
+            <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+          </a>
+        </div>
+      </div><!-- container end -->
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>
