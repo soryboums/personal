@@ -284,7 +284,7 @@ h5{
 	padding: 40px 0px;
 }
 .sub-title{
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-weight: 700;
 	padding-top: 10px;
 	margin-bottom: 25px;
@@ -1203,7 +1203,7 @@ h5{
 .footer-desc .logo{
 	margin-bottom: 30px;
 	font-size: 30px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: #fff;
 }
 .footer-desc .socail-list a i{
