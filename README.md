@@ -1,19 +1,34 @@
-# personal front end
+# personal
 
-My personal website.
+personal is my personal website. It is developped thanks to my [AngularJS](https://angularjs.org) kickstarter [ngclient](https://github.com/soryboums/ngclient).
 
 ***
 
-## Quick Start
+## Quick Start with Vagrant
 
-Install Node.js and then:
+Install [Vagrant](https://www.vagrantup.com/) and then:
 
 ```sh
-$ sudo npm -g install grunt-cli karma bower
+$ cd personal
+$ vagrant up
+$ vagrant ssh
+$ cd /vagrant
+$ npm start
+```
+Finally, go to [`http://localhost:9090/#/home`](http://localhost:9090/#/home).
+
+***
+
+## Standalone Quick Start
+
+Install [Node.js](https://nodejs.org) and then:
+
+```sh
+$ cd personal
+$ sudo npm -g install grunt-cli karma
 $ npm install
 $ grunt watch
 ```
 
-Finally, open `file:///path/to/personal-folder/build/index.html` in your browser.
-
+Now open `file:///path/to/personal-folder/build/index.html` in your browser.
 Happy coding!
