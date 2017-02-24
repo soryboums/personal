@@ -843,6 +843,12 @@ h5{
 	margin-left: 6px;
 }
 
+.tech {
+	background-color: #D9534F;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 2px;
+}
 #portfolio-carousel .carousel-inner .col-md-3{
 	/*width: 20%;*/
 }
