@@ -318,26 +318,62 @@
     <div class="row">
       <div class="col-md-12">
         <div class="contact-desc">
-          <form ng-submit="ctrl.sendMsg($event)" role="form" id="contact-form">
+          <form ng-submit="ctrl.sendMsg($event)" name="form" role="form" id="contact-form">
             <div class="row">
               <div class="col-md-4 wow fadeInLeft" data-wow-delay=".2s">
                 <div class="form-group">
                   <label>Name</label>
-                  <input class="form-control" name="name" ng-model="ctrl.msgObj.name" placeholder="name" type="text" required>
+                  <input class="form-control" name="name" ng-model="ctrl.msgObj.name" placeholder="name" type="text" ng-minlength=2 ng-maxlength=50 required>
+                </div>
+                <div ng-show="form.name.$dirty && form.name.$invalid">
+                  <p class="help-block" ng-show="form.name.$error.required">
+                    Your name is required.
+                  </p>
+                  <p class="help-block" ng-show="form.name.$error.minlength">
+                    Your name should contain at least 2 characters.
+                  </p>
+                  <p class="help-block" ng-show="form.name.$error.maxlength">
+                    Your name shoud not contain more than 50 characters.
+                  </p>
                 </div>
               </div>
 
               <div class="col-md-4 wow fadeInDown" data-wow-delay=".5s">
                 <div class="form-group">
                   <label>Email</label>
-                  <input class="form-control" name="mail" ng-model="ctrl.msgObj.mail" placeholder="email" type="text" required>
+                  <input class="form-control" name="mail" ng-model="ctrl.msgObj.mail" placeholder="email" type="email" ng-minlength=5 ng-maxlength=100 required>
+                </div>
+                <div ng-show="form.mail.$dirty && form.mail.$invalid">
+                  <p class="help-block" ng-show="form.mail.$error.required">
+                    Your mail is required.
+                  </p>
+                  <p class="help-block" ng-show="form.mail.$error.email" translate="global.messages.validate.email.invalid">
+                    Your mail is invalid.
+                  </p>
+                  <p class="help-block" ng-show="form.name.$error.minlength">
+                    Your mail should contain at least 5 characters.
+                  </p>
+                  <p class="help-block" ng-show="form.name.$error.maxlength">
+                    Your mail shoud not contain more than 100 characters.
+                  </p>
                 </div>
               </div>
 
               <div class="col-md-4 wow fadeInRight" data-wow-delay=".8s">
                 <div class="form-group">
                   <label>Subject</label>
-                  <input class="form-control" name="subject" ng-model="ctrl.msgObj.subject" placeholder="subject" type="text">
+                  <input class="form-control" name="subject" ng-model="ctrl.msgObj.subject" placeholder="subject" type="text" ng-minlength=2 ng-maxlength=50 required>
+                  <div ng-show="form.subject.$dirty && form.subject.$invalid">
+                    <p class="help-block" ng-show="form.subject.$error.required">
+                      The subject of the mail is required.
+                    </p>
+                    <p class="help-block" ng-show="form.subject.$error.minlength">
+                      The subject of the mail should contain at least 2 characters.
+                    </p>
+                    <p class="help-block" ng-show="form.subject.$error.maxlength">
+                      The subject of the mail shoud not contain more than 50 characters.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -346,14 +382,22 @@
               <div class="col-md-12 wow fadeInUp" data-wow-delay="1.1s">
                 <div class="form-group">
                   <label>Message</label>
-                  <textarea cols="30" rows="10" class="form-control" ng-model="ctrl.msgObj.msg" placeholder="message"></textarea>
+                  <textarea cols="30" rows="10" name="message" class="form-control" ng-model="ctrl.msgObj.msg" placeholder="message" ng-minlength=20 required></textarea>
+                  <div ng-show="form.message.$dirty && form.message.$invalid">
+                    <p class="help-block" ng-show="form.message.$error.required">
+                      The content of the mail is required.
+                    </p>
+                    <p class="help-block" ng-show="form.subject.$error.minlength">
+                      The content of the mail should contain at least 20 characters.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 wow fadeInUp" data-wow-delay="1.3s">
                 <div class="text-left  m20">
-                  <button type="submit" class="btn btn-white">Submit</button>
+                  <button type="submit" ng-disabled="form.$invalid" class="btn btn-white">Submit</button>
                 </div>
               </div>
             </div>

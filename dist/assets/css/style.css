@@ -1133,6 +1133,11 @@ h5{
 	color: #fff;
 }
 
+.help-block {
+	color: #D9534F;
+	font-style: italic;
+	font-size: 85%;
+}
 
 /*MAp wrapper
 ==============================*/
