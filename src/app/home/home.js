@@ -77,7 +77,15 @@ angular.module( 'personal.home', [
 
   function sendMsg(event){
     event.preventDefault();
-    Message.save(self.msgObj);
+    Message.save(self.msgObj, saveThen, saveError);
+  }
+
+  function saveThen(msg){
+    alert("Your email has been sent successfully");
+  }
+
+  function saveError(error){
+    alert("Error while sending the email, please refresh your page and try it again");
   }
 
 }]);
